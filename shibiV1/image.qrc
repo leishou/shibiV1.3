@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/blur.png</file>
+        <file>image/circle_next.png</file>
+        <file>image/circle_previous.png</file>
+        <file>image/music.png</file>
+        <file>image/music-playing.png</file>
+        <file>image/non-music.png</file>
+        <file>image/pause.png</file>
+        <file>image/PlayMusic.png</file>
+        <file>image/soundOn.png</file>
+        <file>image/volumeHandle.png</file>
+        <file>image/volumeMuted.png</file>
+        <file>image/addIcon.png</file>
+        <file>image/loseIcon.png</file>
+        <file>image/down_arrow.png</file>
+        <file>image/up_arrow.png</file>
+        <file>image/background.jpg</file>
+        <file>bgm1.mp3</file>
+        <file>bgm2.mp3</file>
+        <file>bgm3.mp3</file>
+    </qresource>
+</RCC>
