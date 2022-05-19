@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>shibi</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/image/shibi4.ico</normaloff>:/image/shibi4.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
@@ -115,6 +119,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
  <connections/>
 </ui>

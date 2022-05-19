@@ -7,6 +7,11 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include<QDebug>
+#include<QDateTime>
+#include<string>
+#include<ostream>
+#include<iostream>
+#include<fstream>
 //make a struct for each obj
 struct ToDoItem{
     bool done;

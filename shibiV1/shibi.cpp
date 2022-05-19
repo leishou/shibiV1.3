@@ -8,6 +8,7 @@ shibi::shibi(QWidget *parent)
     , ui(new Ui::shibi)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon("qrc:/image/shibi4.ico"));
     isLog=false;
     w =new frmLunarCalendarWidget;
     todo =new ListDo;
@@ -61,7 +62,7 @@ void shibi::CreateSystemTrayIcon()
 //           QSystemTrayIcon* trayIcon = new QSystemTrayIcon(this);
            trayIcon = new QSystemTrayIcon(this);
 //           trayIcon->setIcon(QIcon("C:\\Users\\15818\\Desktop\\ce.ico"));
-           trayIcon->setIcon(QIcon(":/title.ico")); //设置托盘图标
+           trayIcon->setIcon(QIcon(":/shibi2.ico")); //设置托盘图标
            trayIcon->setContextMenu(trayMenu);                                     //设置菜单
            trayIcon->show();
            QObject::connect(trayIcon,SIGNAL(activated(QSystemTrayIcon::ActivationReason)),this,SLOT(TrayIconAction(QSystemTrayIcon::ActivationReason)));//连接信号与槽，实现单击图标恢复窗口的功能，槽是自定义的槽
@@ -73,7 +74,7 @@ void shibi::init_used()
         //获取桌面子窗口句柄
         hwnd = GetWindow(hwnd, GW_CHILD);
 
-        auto counter = 0;
+        //auto counter = 0;
         while (hwnd != NULL)
         {
             RECT rect;
@@ -256,7 +257,7 @@ ui->stackedWidget->setCurrentIndex(3);
 
 void shibi::on_btn_lun_clicked()
 {
-if(isLog)
+if(T2)
 ui->stackedWidget->setCurrentIndex(0);
 }
 
@@ -274,7 +275,7 @@ ui->stackedWidget->setCurrentIndex(2);
 
 void shibi::on_btn_ing_clicked()
 {
-    if(isLog)
+    if(T2)
     {
     if(!change_Busy)
     {

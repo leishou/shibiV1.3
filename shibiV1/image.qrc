@@ -19,5 +19,7 @@
         <file>bgm1.mp3</file>
         <file>bgm2.mp3</file>
         <file>bgm3.mp3</file>
+        <file>image/shibi3.png</file>
+        <file>image/shibi4.ico</file>
     </qresource>
 </RCC>

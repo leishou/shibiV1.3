@@ -14,7 +14,7 @@ ToDoList::ToDoList(QObject *parent) : QObject(parent)
 
     db.setDatabaseName("sqltest.db");
     if(db.open()){
-           qDebug()<<"open success";
+           //qDebug()<<"open success";
        }
     QSqlQuery query0;
     query0.exec("CREATE TABLE todo(id INTEGER PRIMARY KEY,  isfinshed BOOLEAN DEFAULT (false), work VARCHAR);");
@@ -98,6 +98,18 @@ void ToDoList::removeCompletedItemsA()
             if(db.open()){
                    qDebug()<<"open success";
                }
+            QDateTime curDateTime=QDateTime::currentDateTime();
+            QString cur_time=curDateTime.toString("hh:mm:ss");
+            QString date=curDateTime.date().toString(("yyyy-MM-dd"));
+            fstream oFile;
+            oFile.open("shibi-logs.txt",ios::app);
+            oFile<<date.toStdString();
+            oFile<<" ";
+            oFile<<cur_time.toStdString();
+            oFile<<" 完成事项： ";
+            oFile<<mItems[i].description.toStdString();
+            oFile<<"\n";
+            oFile.close();
             QSqlQuery query;
              query.exec("delete from todo where work = '"+mItems[i].description+"'");
             mItems.removeAt(i);
