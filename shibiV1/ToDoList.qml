@@ -34,8 +34,8 @@ ColumnLayout{
             if none are specified
             */
             id:li
-            implicitWidth: 500
-            implicitHeight: 500
+            implicitWidth: 775
+            implicitHeight: 523
             /*
             this ensure any object outside the
             view wont be deleted

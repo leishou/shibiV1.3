@@ -54,7 +54,7 @@ bool ToDoModel::setData(const QModelIndex &index, const QVariant &value, int rol
 
     db.setDatabaseName("sqltest.db");
     if(db.open()){
-           qDebug()<<"open success";
+          // qDebug()<<"open success";
        }
     switch (role) {
 

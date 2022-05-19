@@ -6,5 +6,8 @@
         <file>main.qml</file>
         <file>ToDoList.qml</file>
         <file>title.ico</file>
+        <file>shibiV1.ico</file>
+        <file>shibi.ico</file>
+        <file>shibi2.ico</file>
     </qresource>
 </RCC>
